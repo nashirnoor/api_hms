@@ -20,6 +20,8 @@ from rest_framework.routers import DefaultRouter
 from api import views
 from django.conf.urls.static import static
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
+from django.conf import settings
+
 
 router = DefaultRouter()
 router.register(r'doctors', views.DoctorViewSet)
